@@ -1,5 +1,6 @@
 import React, { useContext, useEffect } from "react"
 import { ProductContext } from "./ProductProvider"
+import "./Product.css"
 
 export const ProductList = () => { 
     const {products, getProducts, productTypes, getProductTypes} = useContext(ProductContext)

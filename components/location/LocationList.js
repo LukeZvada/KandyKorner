@@ -1,5 +1,6 @@
 import React, { useContext, useEffect } from "react"
 import { LocationContext } from "./LocationProvider"
+import "./Location.css"
 
 export const Locationlist = () => { 
     const {locations, getLocations} = useContext(LocationContext) //locations and get locations is coming from the return starting on line 25 of LocationProvider
