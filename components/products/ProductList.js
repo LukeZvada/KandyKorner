@@ -16,7 +16,7 @@ export const ProductList = () => {
         <article className="products--Card"> 
         {
             products.map(product => {
-                const productType = productTypes.find(productType => productType.id === product.productTypeId && productType.id != null ) //I added a condintional to not map where the productType does not return as undefined 
+                const productType = productTypes.find(productType => (productType.id === product.productTypeId)) || {}
                 console.log(productType)
                 return <section key={product.id} className="products">
                     <div> Name: {product.name} </div>
