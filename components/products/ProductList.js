@@ -17,7 +17,6 @@ export const ProductList = () => {
         {
             products.map(product => {
                 const productType = productTypes.find(productType => (productType.id === product.productTypeId)) || {}
-                console.log(productType)
                 return <section key={product.id} className="products">
                     <div> Name: {product.name} </div>
                     <div> Price: ${product.price} </div>
