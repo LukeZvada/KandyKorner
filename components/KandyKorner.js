@@ -4,11 +4,13 @@ import { Locationlist } from "./location/LocationList"
 import { ProductProvider } from "./products/ProductProvider"
 import { ProductList } from "./products/ProductList"
 import "./KandyKorner.css"
+import { Button } from '@material-ui/core';
 
 
 export const KandyKorner = () => ( 
     <>
         <h2>KandyKorner</h2>
+        <Button color="primary">Hello World</Button>
         {/* <small>React Project</small> */}
 
         <h2>Locations</h2>
@@ -24,8 +26,5 @@ export const KandyKorner = () => (
                 <ProductList />
             </ProductProvider>
         </aritcle>
-
-
-
     </>
 )

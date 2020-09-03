@@ -7,9 +7,6 @@ export const ProductList = () => {
 
     useEffect(() => { 
         getProducts()
-    }, [])
-
-    useEffect(() => { 
         getProductTypes()
     }, [])
 
