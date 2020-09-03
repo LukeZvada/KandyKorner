@@ -1,6 +1,8 @@
 import React from "react"
 import { LocationProvider } from "./location/LocationProvider"
 import { Locationlist } from "./location/LocationList"
+import { ProductProvider } from "./products/ProductProvider"
+import { ProductList } from "./products/ProductList"
 
 
 export const KandyKorner = () => ( 
@@ -14,6 +16,13 @@ export const KandyKorner = () => (
                 <Locationlist />
             </LocationProvider>
         </article>
+
+        <h2>Products</h2>
+        <aritcle className="products"> 
+            <ProductProvider>
+                <ProductList />
+            </ProductProvider>
+        </aritcle>
 
 
 
