@@ -10,6 +10,7 @@ import LocationOnIcon from '@material-ui/icons/LocationOn';
 const useStyles = makeStyles((theme) => ({
     link: {
       display: 'flex',
+      
     },
     icon: {
       marginRight: theme.spacing(0.5),
